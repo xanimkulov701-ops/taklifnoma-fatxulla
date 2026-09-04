@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatxulla & Zeboxon — To'y Taklifnomasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #d4af37;
+            --bg-color: #fcfbfa;
+            --text-color: #4a4a4a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+            min-height: 100vh;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(to bottom, #f7f5f0, #ffffff);
+        }
+
+        .invitation-title {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            color: var(--primary-color);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .couple-names span {
+            display: block;
+            font-size: 28px;
+            color: var(--accent-color);
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            margin: 10px 0;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            filter: brightness(0.95);
+        }
+
+        section {
+            padding: 40px 30px;
+            text-align: center;
+            border-bottom: 1px solid #f0efed;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Countdown */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .countdown-item {
+            background: #fdfbf7;
+            border: 1px solid #e8e4dc;
+            padding: 15px 10px;
+            min-width: 70px;
+            border-radius: 8px;
+        }
+
+        .countdown-number {
+            font-size: 22px;
+            font-weight: 600;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .countdown-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #888;
+        }
+
+        /* Details */
+        .details-box {
+            background: #fdfbf7;
+            border-radius: 10px;
+            padding: 25px;
+            margin-top: 20px;
+            border: 1px solid #f0ece1;
+        }
+
+        .details-item {
+            margin-bottom: 20px;
+        }
+
+        .details-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .details-item i {
+            color: var(--accent-color);
+            font-size: 20px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .details-item h3 {
+            font-size: 16px;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        /* Card / Donat */
+        .card-box {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 20px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .card-number {
+            font-family: monospace;
+            font-size: 20px;
+            letter-spacing: 2px;
+            margin: 10px 0;
+            color: var(--accent-color);
+        }
+
+        .card-holder {
+            font-size: 13px;
+            opacity: 0.8;
+            text-transform: uppercase;
+        }
+
+        /* Contacts & Buttons */
+        .btn {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: 0.3s;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 13px;
+            color: #999;
+            background: #f7f5f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="invitation-title">NIKOH TO'YIGA TAKLIF ETAMIZ</div>
+            <h1>Fatxulla & Zeboxon</h1>
+            <p>Sizni hayotimizdagi eng muhim va quvonchli kunni biz bilan birga nishonlashga lutfan taklif etamiz.</p>
+        </header>
+
+        <!-- PHOTO -->
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80" alt="Kelin Kuyov" class="hero-image">
+
+        <!-- COUNTDOWN SECTION -->
+        <section>
+            <h2 class="section-title">To'ygacha qoldi</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Kun</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Soat</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Daqiqa</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Soniya</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- DATE & LOCATION -->
+        <section>
+            <h2 class="section-title">Manzil va Vaqt</h2>
+            <div class="details-box">
+                <div class="details-item">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <h3>Sana</h3>
+                    <p>2026-yil 25-oktabr, Soat 17:00 da</p>
+                </div>
+                <div class="details-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>To'yxona</h3>
+                    <p>"Navro'z" tantanalar saroyi, Toshkent shahri, Shayxontohur tumani</p>
+                </div>
+            </div>
+            <a href="https://maps.google.com" target="_blank" class="btn"><i class="fa-solid fa-map-location-dot"></i> Xaritada ko'rsatish</a>
+        </section>
+
+        <!-- ONLINE TRANSMISSION SECTION -->
+        <section>
+            <h2 class="section-title">Onlayn Translatsiya</h2>
+            <p>To'yimizga kela olmagan yaqinlarimiz uchun to'g'ridan-to'gʻri efir orqali kuzatish imkoniyati:</p>
+            <a href="https://youtube.com" target="_blank" class="btn" style="background: #e74c3c;"><i class="fa-solid fa-video"></i> Jonli efirga ulanish</a>
+        </section>
+
+        <!-- CARD INFO -->
+        <section>
+            <h2 class="section-title">Karta Raqami</h2>
+            <p>To'yiga o'z ulushini qo'shmoqchi bo'lgan aziz mehmonlar uchun:</p>
+            <div class="card-box">
+                <div class="card-holder">Humo / UzCard (Fatxulla K.)</div>
+                <div class="card-number">9860 **** **** 7732</div>
+                <div style="font-size: 12px; opacity: 0.7;">Bank: Ipoteka-bank</div>
+            </div>
+        </section>
+
+        <!-- CONTACTS -->
+        <section>
+            <h2 class="section-title">Bog'lanish</h2>
+            <p>Savollar bo'yicha murojaat qilishingiz mumkin:</p>
+            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
+                <a href="tel:+998935557788" class="btn" style="background: #27ae60;"><i class="fa-solid fa-phone"></i> Kuyov: +998 93 555-77-88</a>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+                <a href="tel:+998946663322" class="btn" style="background: #e67e22;"><i class="fa-solid fa-phone"></i> Qudalar: +998 94 666-33-22</a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Tashrifingizdan mamnun bo'lamiz! <br>Hurmat bilan, Fatxulla va Zeboxon</p>
+        </footer>
+    </div>
+
+    <script>
+        // Ortga qolgan vaqtni hisoblash (Target: 2026-yil 25-oktabr 17:00)
+        const targetDate = new Date("October 25, 2026 17:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const gap = targetDate - now;
+
+            if (gap < 0) {
+                document.getElementById("countdown").innerHTML = "<h3>To'y boshlandi!</h3>";
+                return;
+            }
+
+            const second = 1000;
+            const minute = second * 60;
+            const hour = minute * 60;
+            const day = hour * 24;
+
+            const days = Math.floor(gap / day);
+            const hours = Math.floor((gap % day) / hour);
+            const minutes = Math.floor((gap % hour) / minute);
+            const seconds = Math.floor((gap % minute) / second);
+
+            document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
